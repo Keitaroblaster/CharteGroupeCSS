@@ -1,14 +1,16 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 800px;
+  max-width: 930px;
   margin: 0 auto;
   padding: ;
   box-sizing: border-box;
 }
 
 h1 {
-  background-color: rgba(139, 193, 228, 0.211);
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(139, 192, 228, 0.803);
   border-radius: 50px;
   color: rgb(68, 0, 255);
 }
@@ -17,15 +19,33 @@ h1 {
   padding: 10px 10px 10px 10px;
   border-radius: 50px;
   margin-top: 20px;
+  background-color: rgba(122, 255, 246, 0.455);
 }
 
 .button:hover {
   color: blue;
   border-radius: 50px;
   box-shadow: 10px 5px 5px rgb(139, 193, 228);
+  background-color: white;
 }
 
 li {
   text-align: start;
   list-style-image: url(/images/bullet.png);
+}
+
+div.container {
+  font-weight: bolder;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.access {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
 }
