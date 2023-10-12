@@ -6,6 +6,7 @@
   padding: ;
   box-sizing: border-box;
 }
+
 h1 {
   background-color: rgb(255, 255, 255);
   border-radius: 50px;
@@ -15,9 +16,12 @@ h1 {
 .column {
   border: 50px;
 }
+
 .button {
   padding: 10px 10px 10px 10px;
+  border-radius: 50px;
 }
+
 .button:hover {
   color: blue;
   border-radius: 50px;
