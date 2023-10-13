@@ -3,28 +3,31 @@
   width: 100%;
   max-width: 930px;
   margin: 0 auto;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 h1 {
-  text-align: center;
+  text-align: start;
+  margin-left: 20px;
   font-size: 20px;
-  border-radius: 50px;
+  border-radius: 2%;
   color: black;
+  font-family: sans-serif;
 }
 
 .button {
   padding: 10px 10px 10px 10px;
   border-radius: 50px;
   margin-top: 20px;
-  box-shadow: 1px 5px 5px 5px rgb(141, 141, 141);
+  box-shadow: 1px 5px 5px 5px rgb(208, 208, 208);
   background-color: white;
+  border-style: none;
 }
 
 .button:hover {
   color: black;
   border-radius: 50px;
-  box-shadow: 1px 5px 5px 5px rgb(141, 141, 141);
+  box-shadow: 1px 5px 5px 5px rgb(208, 208, 208);
   background-color: white;
 }
 
@@ -39,10 +42,10 @@ div.container {
   font-weight: bolder;
   font-size: 15px;
   margin-left: 15%;
-  background-color: black;
-  color: white;
-  border-radius: 20px;
+  background-color: white;
+  color: black;
   padding: 2px 20px;
+  box-shadow: 0px 5px rgb(228, 228, 228);
 }
 
 /* boutton envoie sur github */
@@ -58,6 +61,7 @@ div.container {
   border-radius: 10px;
   text-align: center;
   padding: 0 20px;
+  border-style: none;
 }
 
 /* Header */
@@ -83,6 +87,7 @@ header {
   border-radius: 10px;
   text-align: center;
   padding: 0 20px;
+  border-style: none;
 }
 
 /* container de code */
@@ -92,4 +97,6 @@ header {
   background-color: rgb(212, 211, 211);
   border-radius: 30px;
   color: black;
+  box-sizing: border-box;
+  border: solid;
 }
