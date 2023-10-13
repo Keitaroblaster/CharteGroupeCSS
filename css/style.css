@@ -33,12 +33,16 @@ li {
   list-style-image: url(/images/bullet.png);
 }
 
+/* entête */
+
 div.container {
   font-weight: bolder;
   font-size: 15px;
-  text-decoration: underline;
-  position: fixed;
-  margin-left: 16%;
+  margin-left: 15%;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 2px 20px;
 }
 
 /* boutton envoie sur github */
@@ -56,4 +60,15 @@ div.container {
   padding: 0 20px;
 }
 
-/* Paragraphe de présentation avec le boutton Accès GitHub */
+/* Header */
+
+header {
+  z-index: 2;
+  position: fixed;
+}
+
+/* paragraphe présentation charte */
+
+.github {
+  margin-top: 5%;
+}
