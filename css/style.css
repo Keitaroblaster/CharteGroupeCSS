@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(231, 230, 230);
+}
+
 .container {
   position: relative;
   width: 100%;
@@ -17,7 +21,7 @@ h1 {
 
 .button {
   padding: 10px 10px 10px 10px;
-  border-radius: 50px;
+  border-radius: 10px;
   margin-top: 20px;
   box-shadow: 1px 5px 5px 5px rgb(208, 208, 208);
   background-color: white;
@@ -26,7 +30,7 @@ h1 {
 
 .button:hover {
   color: black;
-  border-radius: 50px;
+  border-radius: 10px;
   box-shadow: 1px 5px 5px 5px rgb(208, 208, 208);
   background-color: white;
 }
@@ -40,11 +44,13 @@ li {
 
 div.container {
   font-weight: bolder;
-  font-size: 15px;
-  margin-left: 15%;
+  font-size: 25px;
+  text-align: left;
+  margin-left: 6%;
   background-color: white;
+  background-size: cover;
   color: black;
-  padding: 2px 20px;
+  padding: 15px 20px;
   box-shadow: 0px 5px rgb(228, 228, 228);
 }
 
@@ -69,12 +75,13 @@ div.container {
 header {
   z-index: 2;
   position: fixed;
+
 }
 
 /* paragraphe présentation charte */
 
 .github {
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 /* boutton de fin random apprenant */
@@ -85,7 +92,6 @@ header {
   font-weight: bolder;
   font-size: 10px;
   border-radius: 10px;
-  text-align: center;
   padding: 0 20px;
   border-style: none;
 }
@@ -94,9 +100,16 @@ header {
 
 .code {
   font-size: 20px;
-  background-color: rgb(212, 211, 211);
-  border-radius: 30px;
+  background-color: rgb(200, 200, 200);
+  border-radius: 10px;
   color: black;
   box-sizing: border-box;
-  border: solid;
+  box-sizing: border-box;
+  border: solid #5B6DCD 1px;
+}
+
+/* Texte présentation du code */
+
+.texteCode {
+  font-size: 20px;
 }
