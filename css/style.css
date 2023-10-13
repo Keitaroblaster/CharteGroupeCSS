@@ -48,4 +48,7 @@ div.container {
   color: white;
   font-weight: bolder;
   font-size: larger;
+  border-radius: 10px;
 }
+
+/* Paragraphe de présentation avec le boutton Accès GitHub */
