@@ -1,122 +1,252 @@
+/* Base style
+---------------------------------------------------*/
+
+html {
+    font-size: 62.5%; }
+
 body {
-  background-color: rgb(224, 224, 224);
-  font-family: sans-serif;
-}
+    font-size: 1.5rem;
+    background-color: #bbb9c419;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #2f2a2a; }
+
+/*  Header
+---------------------------------------------------*/
+
+header{
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(252, 250, 246, 0.305);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: start;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 5px 15px rgb(170, 170, 170); }
+  
+/* Flamme size
+---------------------------------------------------*/
+
+.flamme{
+    width: 15px;
+    height: 15px; }
+
+/* Buttons
+---------------------------------------------------*/
+
+.buttonGithub {
+    float: right;
+    margin-right: 5px;
+    margin-top: -85px;
+    background-color: rgb(210, 19, 19);
+    color: white;
+    font-weight: bolder;
+    font-size: 1em;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 20px;
+    border-style: none;
+    height: 38px;
+    width: 20%; }
+
+.buttonRandom {
+    background-color: rgb(210, 19, 19);
+    color: white;
+    font-weight: bolder;
+    font-size: 1em;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0px 10px;
+    border-style: none;
+    margin-bottom: 100px;
+    margin-left: 37%;
+    height: 38px;
+    width: 25%; }
+
+button:hover,
+button:focus,
+input[type="button"]:focus {
+    color: #333; }
+
+/* Container
+---------------------------------------------------*/
 
 .container {
-  position: relative;
-  width: 100%;
-  max-width: 930px;
-  margin: 0 auto;
-  box-sizing: content-box;
-}
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; }
 
-h1 {
-  text-align: start;
-  margin-left: 20px;
-  font-size: 20px;
-  border-radius: 2%;
-  color: black;
-}
+.column,
+.columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 90px;
+    margin-bottom: 50px; }
+    
+/* Typographie
+---------------------------------------------------*/
 
-.button {
-  padding: 10px 10px 10px 10px;
-  border-radius: 10px;
-  margin-top: 20px;
-  box-shadow: 1px 5px 5px 5px rgb(208, 208, 208);
-  background-color: white;
-  border-style: none;
-}
+h1{
+    font-size: 45px;
+    font-weight: lighter; }
 
-.button:hover {
-  color: black;
-  border-radius: 10px;
-  box-shadow: 1px 5px 5px 5px rgb(208, 208, 208);
-  background-color: white;
-}
+h2{
+    font-size:25px;
+    font-weight: lighter; }
+
+.article1,
+.article2,
+.article3,
+.article4,
+.article5 {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px 5px rgb(208, 208, 208);
+    background-color: white; }
+
+    
+.article1:hover, 
+.article2:hover, 
+.article3:hover, 
+.article4:hover, 
+.article5:hover {
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px 5px rgb(190, 190, 190);
+    background-color: white; }
 
 li {
-  text-align: start;
-  list-style-image: url(/images/bullet.png);
+    font-size: 15px;
+    margin-bottom: 1rem;
+    list-style-image: url(/images/bullet.png); }
+
+/* Code
+---------------------------------------------------*/
+
+code {
+    background: rgba(128, 128, 128, 0.100);
+    border: 2px solid #a4a1a146;
+    border-radius: 15px; }
+pre > code {
+    display: block; }
+
+/* Self Clearing Goodness
+---------------------------------------------------*/
+
+.container:after,
+.row:after,
+.u-cf {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* For devices larger than 400px
+---------------------------------------------------*/
+
+@media (min-width: 400px) {
+.container {
+    width: 85%;
+    padding: 0; } }
+  
+/* For devices larger than 550px
+----------------------------------------------------*/
+
+@media (min-width: 550px) {
+.container {
+    width: 80%; }
+.column,
+.columns {
+    margin-left: 4%; }
+.column:first-child,
+.columns:first-child {
+    margin-left: 0; }
+  
+.one.column,
+.one.columns                    { width: 4.66666666667%; }
+.two.columns                    { width: 13.3333333333%; }
+.three.columns                  { width: 22%;            }
+.four.columns                   { width: 30.6666666667%; }
+.five.columns                   { width: 39.3333333333%; }
+.six.columns                    { width: 48%;            }
+.seven.columns                  { width: 56.6666666667%; }
+.eight.columns                  { width: 65.3333333333%; }
+.nine.columns                   { width: 74.0%;          }
+.ten.columns                    { width: 82.6666666667%; }
+.eleven.columns                 { width: 91.3333333333%; }
+.twelve.columns                 { width: 100%; margin-left: 0; }
+  
+.one-third.column               { width: 30.6666666667%; }
+.two-thirds.column              { width: 65.3333333333%; }
+  
+.one-half.column                { width: 48%; }*/
+  
+/* Offsets */
+
+.offset-by-one.column,
+.offset-by-one.columns          { margin-left: 8.66666666667%; }
+.offset-by-two.column,
+.offset-by-two.columns          { margin-left: 17.3333333333%; }
+.offset-by-three.column,
+.offset-by-three.columns        { margin-left: 26%;            }
+.offset-by-four.column,
+.offset-by-four.columns         { margin-left: 34.6666666667%; }
+.offset-by-five.column,
+.offset-by-five.columns         { margin-left: 43.3333333333%; }
+.offset-by-six.column,
+.offset-by-six.columns          { margin-left: 52%;            }
+.offset-by-seven.column,
+.offset-by-seven.columns        { margin-left: 60.6666666667%; }
+.offset-by-eight.column,
+.offset-by-eight.columns        { margin-left: 69.3333333333%; }
+.offset-by-nine.column,
+.offset-by-nine.columns         { margin-left: 78.0%;          }
+.offset-by-ten.column,
+.offset-by-ten.columns          { margin-left: 86.6666666667%; }
+.offset-by-eleven.column,
+.offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+  
+.offset-by-one-third.column,
+.offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+.offset-by-two-thirds.column,
+.offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+  
+.offset-by-one-half.column,
+.offset-by-one-half.columns     { margin-left: 52%; }
+  
 }
+  
+/* Larger than phablet
+---------------------------------------------------*/
 
-/* entête */
+@media (min-width: 550px) {
+    h1 { font-size: 5.0rem; } }
+p {
+    margin-top: 0; }
 
-.header {
-  background-color: white;
-  background-size: cover;
-  width: auto;
-  padding: 10px 300px;
-  box-shadow: 0px 5px rgb(175, 175, 175);
-}
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+/* Larger than mobile
+---------------------------------------------------*/
 
-div.container {
-  font-weight: bolder;
-  font-size: 25px;
-  text-align: center;
-  color: black;
-  margin-left: 0px;
-}
-
-/* boutton envoie sur github */
-
-.access {
-  float: right;
-  margin-right: 20px;
-  margin-top: -50px;
-  background-color: red;
-  color: white;
-  font-weight: bolder;
-  font-size: 10px;
-  border-radius: 10px;
-  text-align: center;
-  padding: 0 20px;
-  border-style: none;
-}
-
-/* Header */
-
-header {
-  z-index: 2;
-  position: fixed;
-
-}
-
-/* paragraphe présentation charte */
-
-.github {
-  margin-top: 10%;
-}
-
-/* boutton de fin random apprenant */
-
-.fin {
-  background-color: red;
-  color: white;
-  font-weight: bolder;
-  font-size: 10px;
-  border-radius: 10px;
-  padding: 0 20px;
-  border-style: none;
-  margin-left: 40%;
-}
-
-/* container de code */
-
-.code {
-  font-size: 15px;
-  text-align: start;
-  background-color: rgb(200, 200, 200);
-  border-radius: 10px;
-  color: black;
-  box-sizing: border-box;
-  box-sizing: border-box;
-  border: solid #5B6DCD 1px;
-  text-align: left;
-}
-
-/* Texte présentation du code */
-
-.texteCode {
-  font-size: 20px;
-}
+@media (min-width: 400px) {}
+  
+/* Larger than phablet (also point when grid becomes active)
+---------------------------------------------------*/
+@media (min-width: 550px) {}
+  
+/* Larger than tablet
+---------------------------------------------------*/
+@media (min-width: 750px) {}
+  
+/* Larger than desktop
+---------------------------------------------------*/
+@media (min-width: 1000px) {}
+  
+/* Larger than Desktop HD
+---------------------------------------------------*/
+@media (min-width: 1200px) {}
